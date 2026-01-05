@@ -38,6 +38,11 @@ if (isset($_POST['submit'])) {
     } else {
         echo "<script>alert('Password tidak sesuai.')</script>";
     }
+}else{
+    $username = "";
+    $email = "";
+    $_POST['password'] = "";
+    $_POST['cpassword'] = "";
 }
 ?>
  
