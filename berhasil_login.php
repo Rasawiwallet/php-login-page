@@ -20,13 +20,50 @@ if (!isset($_SESSION['username'])) {
     <title>Login berhasil!</title>
 </head>
 <body>
-    <div class="container-logout">
-        <form action="logout.php" method="POST" class="login-email">
-            <h1>Selamat datang, <?php echo $_SESSION['username']; ?>!</h1>
-            <div class="input-group">
-                <button type="submit" class="btn">Logout</button>
-            </div>
-        </form>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="logo">MyApp</span>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Info</a>
     </div>
+
+    <div class="nav-right">
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="dropdown" id="menuDropdown">
+            <div class="dropdown-header">
+                <i class="fa fa-user-circle"></i>
+                <span><?php echo $_SESSION['username']; ?></span>
+            </div>
+
+            <a href="#" class="dropdown-item">
+                <i class="fa fa-user"></i> Profil
+            </a>
+
+            <form action="logout.php" method="POST">
+                <button type="submit" class="dropdown-item logout">
+                    <i class="fa fa-sign-out"></i> Logout
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<div class="container-logout">
+    <h1>Selamat datang, <?php echo $_SESSION['username']; ?>!</h1>
+    <p>Anda berhasil login ke sistem.</p>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menuDropdown").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>
