@@ -29,29 +29,52 @@ if (isset($_POST['submit'])) {
 ?>
  
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Resto Cloud</title>
+
+    <!-- Font Awesome (aman di cloud & VM) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>PHP Login Page</title>
+
+    <!-- CSS Lokal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+
+<div class="login-wrapper">
+    <div class="login-card">
+
+        <div class="login-header">
+            <h1>RestoCloud</h1>
+            <p>Admin Reservation System</p>
+        </div>
+
+        <form action="" method="POST" class="login-form">
+
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" required>
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
+
             <div class="input-group">
-                <input type="password" placeholder="Password" name="password" required>
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
             </div>
-            <div class="input-group">
-                <button name="submit" class="btn">Login</button>
-            </div>
-            <p class="login-register-text">Belum punya akun? <a href="register.php">Daftar</a>.</p>
+
+            <button type="submit" name="submit" class="btn-login">
+                <i class="fa fa-sign-in"></i> Login
+            </button>
+
+            <p class="login-register-text">
+                Belum punya akun?
+                <a href="register.php">Daftar di sini</a>
+            </p>
+
         </form>
     </div>
+</div>
+
 </body>
 </html>
