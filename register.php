@@ -47,35 +47,78 @@ if (isset($_POST['submit'])) {
 ?>
  
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | RestoCloud</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Daftar Akun Hostinger</title>
+
+    <!-- CSS Lokal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Gabung Hostinger</p>
+
+<div class="login-wrapper">
+    <div class="login-card">
+
+        <div class="login-header">
+            <h1>RestoCloud</h1>
+            <p>Admin Registration</p>
+        </div>
+
+        <form action="" method="POST" class="login-form">
+
             <div class="input-group">
-                <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+                <i class="fa fa-user"></i>
+                <input type="text"
+                       name="username"
+                       placeholder="Username"
+                       value="<?php echo $username; ?>"
+                       required>
             </div>
+
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <i class="fa fa-envelope"></i>
+                <input type="email"
+                       name="email"
+                       placeholder="Email Address"
+                       value="<?php echo $email; ?>"
+                       required>
             </div>
+
             <div class="input-group">
-                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                <i class="fa fa-lock"></i>
+                <input type="password"
+                       name="password"
+                       placeholder="Password"
+                       value="<?php echo $_POST['password']; ?>"
+                       required>
             </div>
+
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+                <i class="fa fa-lock"></i>
+                <input type="password"
+                       name="cpassword"
+                       placeholder="Confirm Password"
+                       value="<?php echo $_POST['cpassword']; ?>"
+                       required>
             </div>
-            <div class="input-group">
-                <button name="submit" class="btn">Daftar</button>
-            </div>
-            <p class="login-register-text">Sudah punya akun? <a href="index.php">Login</a>.</p>
+
+            <button type="submit" name="submit" class="btn-login">
+                <i class="fa fa-user-plus"></i> Daftar
+            </button>
+
+            <p class="login-register-text">
+                Sudah punya akun?
+                <a href="index.php">Login di sini</a>
+            </p>
+
         </form>
     </div>
+</div>
+
 </body>
 </html>
