@@ -15,6 +15,8 @@ if (!isset($_SESSION['username'])) {
 </head>
 <body>
 
+<?php include 'navbar.php'; ?>
+
 <h2>Reservasi Meja Restoran</h2>
 
 <form action="process_reservasi.php" method="POST">

@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
     <title>Resto Cloud</title>
 </head>
 <body>
-    
+
 <?php if (isset($_SESSION['login_success'])): ?>
 <div class="alert-success">
     <i class="fa fa-check-circle"></i>
@@ -32,8 +32,8 @@ if (!isset($_SESSION['username'])) {
 <nav class="navbar">
     <div class="nav-left">
         <span class="logo">MyApp</span>
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Info</a>
+        <a href="home.php" class="nav-link">Home</a>
+        <a href="info.php" class="nav-link">Info</a>
     </div>
 
     <div class="nav-right">

@@ -347,3 +347,15 @@ input[type="radio"]:checked + .meja {
     text-decoration: none;
     font-weight: bold;
 }
+
+.navbar a,
+.nav-link {
+    text-decoration: none;     /* HILANGKAN GARIS */
+    color: #ffffff;            /* WARNA TEKS */
+    font-weight: 500;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+    color: #ffd200;
+}
