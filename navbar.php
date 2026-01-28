@@ -1,20 +1,35 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <nav class="navbar">
     <div class="nav-left">
-        <span class="logo">MyApp</span>
-        <a href="home.php">Home</a>
-        <a href="info.php">Info</a>
+        <span class="logo">Resto Cloud</span>
+        <a href="home.php" class="nav-link">Home</a>
+        <a href="info.php" class="nav-link">Info</a>
     </div>
 
     <div class="nav-right">
-        <button onclick="toggleMenu()">☰</button>
+        <button class="hamburger" id="menuBtn">
+            <i class="fa fa-bars"></i>
+        </button>
 
         <div class="dropdown" id="menuDropdown">
-            <p><?php echo $_SESSION['username']; ?></p>
+            <div class="dropdown-header">
+                <i class="fa fa-user-circle"></i>
+                <span><?php echo $_SESSION['username'] ?? 'User'; ?></span>
+            </div>
 
-            <a href="#">Profil</a>
+            <a href="profile.php" class="dropdown-item">
+                <i class="fa fa-user"></i> Profil
+            </a>
 
             <form action="logout.php" method="POST">
-                <button type="submit">Logout</button>
+                <button type="submit" class="dropdown-item logout">
+                    <i class="fa fa-sign-out"></i> Logout
+                </button>
             </form>
         </div>
     </div>
