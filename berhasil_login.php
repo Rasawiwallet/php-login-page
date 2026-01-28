@@ -31,13 +31,13 @@ if (!isset($_SESSION['username'])) {
 <!-- Navbar -->
 <nav class="navbar">
     <div class="nav-left">
-        <span class="logo">MyApp</span>
+        <span class="logo">Resto Cloud</span>
         <a href="home.php" class="nav-link">Home</a>
         <a href="info.php" class="nav-link">Info</a>
     </div>
 
     <div class="nav-right">
-        <button class="hamburger" id="menuBtn" onclick="toggleMenu()>
+        <button class="hamburger" id="menuBtn" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
         </button>
 

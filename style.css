@@ -416,3 +416,20 @@ input[type="radio"]:checked + .meja {
 .dropdown-item.logout {
     color: #ff6b6b;
 }
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #111;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-back:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}

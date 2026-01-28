@@ -1,9 +1,3 @@
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-
 <nav class="navbar">
     <div class="nav-left">
         <span class="logo">Resto Cloud</span>

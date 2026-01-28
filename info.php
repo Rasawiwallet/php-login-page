@@ -22,6 +22,8 @@ $data = mysqli_query($conn,
 </head>
 <body>
 
+<?php include 'navbar.php'; ?>
+
 <h2>Info & Bukti Reservasi</h2>
 
 <div class="info-container">
@@ -44,6 +46,6 @@ $data = mysqli_query($conn,
     </div>
 <?php } ?>
 </div>
-
+<script src="navbar.js"></script>
 </body>
 </html>

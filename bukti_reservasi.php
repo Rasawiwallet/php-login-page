@@ -22,3 +22,7 @@ $row = mysqli_fetch_assoc($data);
 Silakan tunjukkan bukti reservasi ini kepada kasir atau pelayan.
 Pembayaran dilakukan setelah selesai menggunakan meja.
 </p>
+
+<a href="home.php" class="btn-back">
+    ← Kembali ke Home
+</a>

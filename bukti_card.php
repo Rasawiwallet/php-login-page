@@ -66,5 +66,9 @@ function download() {
 }
 </script>
 
+<a href="home.php" class="btn-back">
+    ← Kembali ke Home
+</a>
+
 </body>
 </html>

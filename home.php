@@ -34,19 +34,19 @@ if (!isset($_SESSION['username'])) {
         <!-- Meja pakai gambar -->
         <input type="radio" name="meja" id="meja1" value="M1" hidden>
         <label for="meja1" class="meja">
-            <img src="assets/meja.png">
+            <img src="assets/meja.jpg">
             <span>Meja 1</span>
         </label>
 
         <input type="radio" name="meja" id="meja2" value="M2" hidden>
         <label for="meja2" class="meja">
-            <img src="assets/meja.png">
+            <img src="assets/meja.jpg">
             <span>Meja 2</span>
         </label>
 
         <input type="radio" name="meja" id="meja3" value="M3" hidden>
         <label for="meja3" class="meja">
-            <img src="assets/meja.png">
+            <img src="assets/meja.jpg">
             <span>Meja 3</span>
         </label>
     </div>
@@ -55,8 +55,8 @@ if (!isset($_SESSION['username'])) {
 </form>
 
 <p class="info">
-    * Pembayaran dilakukan di restoran setelah makan selesai.
+* Pembayaran dilakukan di restoran setelah makan selesai.
 </p>
-
+<script src="navbar.js"></script>
 </body>
 </html>
