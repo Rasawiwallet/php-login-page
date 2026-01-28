@@ -359,3 +359,60 @@ input[type="radio"]:checked + .meja {
 .nav-link:hover {
     color: #ffd200;
 }
+
+.nav-right {
+    position: relative;
+}
+
+/* Dropdown box */
+.dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.dropdown.show {
+    display: flex;
+}
+
+/* Header */
+.dropdown-header {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.3);
+    font-weight: 600;
+}
+
+/* Item */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.dropdown-item.logout {
+    color: #ff6b6b;
+}

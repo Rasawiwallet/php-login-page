@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
     </div>
 
     <div class="nav-right">
-        <button class="hamburger" onclick="toggleMenu()">
+        <button class="hamburger" id="menuBtn" onclick="toggleMenu()>
             <i class="fa fa-bars"></i>
         </button>
 
@@ -47,13 +47,15 @@ if (!isset($_SESSION['username'])) {
                 <span><?php echo $_SESSION['username']; ?></span>
             </div>
 
-            <a href="#" class="dropdown-item">
-                <i class="fa fa-user"></i> Profil
+            <a href="profile.php" class="dropdown-item">
+                <i class="fa fa-user"></i> 
+                <span>Profil</span>
             </a>
 
             <form action="logout.php" method="POST">
                 <button type="submit" class="dropdown-item logout">
-                    <i class="fa fa-sign-out"></i> Logout
+                    <i class="fa fa-sign-out"></i> 
+                    <span>Logout</span>
                 </button>
             </form>
         </div>
