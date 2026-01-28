@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
+        $_SESSION['login_success'] = true;
         header("Location: berhasil_login.php");
         exit();
     } else {

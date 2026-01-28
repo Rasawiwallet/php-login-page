@@ -17,9 +17,16 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Login berhasil!</title>
+    <title>Resto Cloud</title>
 </head>
 <body>
+    
+<?php if (isset($_SESSION['login_success'])): ?>
+<div class="alert-success">
+    <i class="fa fa-check-circle"></i>
+    Login berhasil. Selamat datang, <?php echo $_SESSION['username']; ?>!
+</div>
+<?php unset($_SESSION['login_success']); endif; ?>
 
 <!-- Navbar -->
 <nav class="navbar">
@@ -56,7 +63,6 @@ if (!isset($_SESSION['username'])) {
 <!-- Content -->
 <div class="container-logout">
     <h1>Selamat datang, <?php echo $_SESSION['username']; ?>!</h1>
-    <p>Anda berhasil login ke sistem.</p>
 </div>
 
 <script>
