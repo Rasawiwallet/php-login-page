@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 
         <div class="login-header">
             <h1>RestoCloud</h1>
-            <p>Admin Reservation System</p>
+            <p>System Reservation Resto Cloud</p>
         </div>
 
         <form action="" method="POST" class="login-form">
