@@ -19,5 +19,6 @@ if (!isset($_SESSION['username'])) {
     <h2>Profil User</h2>
     <p>Username: <?php echo $_SESSION['username']; ?></p>
     <a href="home.php">Kembali</a>
+    <script src="navbar.js"></script>
 </body>
 </html>
